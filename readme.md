@@ -9,7 +9,7 @@ Have some inheritance you want to deserialize?
 * use `SubclassJsonConverter` + your own type resolver implementing `ITypeResolver` interface for subclasses with same structure
 
 ## Why?
-From time to time you need to model your data in an inferitance-fashion approach (doesn't matter if you chose such or were given ;-)) and then deserialization of the subclasses might be troublesome.
+From time to time you need to model your data in the inheritance-fashion approach (doesn't matter if you chose such or were given ;-)) and then deserialization of the subclasses might be troublesome.
 
 ## How?
 Nothing fancy - this package is supposed to solve this by exposing a simple `SubclassJsonConverter` that uses underyling subclass structure to determine the output type.
