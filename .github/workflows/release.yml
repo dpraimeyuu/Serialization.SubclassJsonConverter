@@ -22,11 +22,11 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish NuGet
-        uses: brandedoutcast/publish-nuget@v2.5.1
+        uses: brandedoutcast/publish-nuget@v2.5.4
         with:
           PROJECT_FILE_PATH: Serialization.SubclassJsonConverter.Core/Serialization.SubclassJsonConverter.Core.csproj
           VERSION_FILE_PATH: Serialization.SubclassJsonConverter.Core/Serialization.SubclassJsonConverter.Core.csproj
-          VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
+          VERSION_REGEX: (.*)</Version>
           PACKAGE_NAME: Serialization.SubclassJsonConverter
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
           INCLUDE_SYMBOLS: true
