@@ -36,7 +36,7 @@ jobs:
       - name: Publish NuGet
         uses: brandedoutcast/publish-nuget@v2.5.5
         with:
-          PROJECT_FILE_PATH: Serialization.SubclassJsonConverter.Core
+          PROJECT_FILE_PATH: Serialization.SubclassJsonConverter.Core/Serialization.SubclassJsonConverter.Core.csproj
           PACKAGE_NAME: Serialization.SubclassJsonConverter
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
           INCLUDE_SYMBOLS: true
