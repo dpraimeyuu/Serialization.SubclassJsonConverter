@@ -20,7 +20,7 @@ In order to work against that, deserialization needs some help to determine the 
 
 ## Usage
 ```csharp
-using Newtonsoft.Json
+using Newtonsoft.Json;
 
 [JsonConverter(typeof(SubclassJsonConverter), typeof(Job))]
 public class Job
